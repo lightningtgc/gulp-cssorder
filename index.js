@@ -51,7 +51,7 @@ function gulpPlugin(configPath, options) {
         return cb();
       }
 
-      configPath = cssOrder.getCustomConfigPath(configPath || path.join(path.dirname(file.path), '.csscomb.json'));
+      configPath = cssOrder.getCustomConfigPath(configPath || path.join(path.dirname(file.path), '/config/config.json'));
       var config = cssOrder.getCustomConfig(configPath);
 
       if (verbose) {
